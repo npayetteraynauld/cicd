@@ -1,9 +1,9 @@
 package auth
 
 import (
-	"testing"
-	"net/http"
 	"errors"
+	"net/http"
+	"testing"
 )
 
 func TestGetAPIKey(t *testing.T) {
