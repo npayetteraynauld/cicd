@@ -92,7 +92,7 @@ func main() {
 	srv := &http.Server{
 		Addr:              ":" + port,
 		Handler:           router,
-		ReadHeaderTimeout: time.Minute
+		ReadHeaderTimeout: time.Minute,
 	}
 
 	log.Printf("Serving on port: %s\n", port)
