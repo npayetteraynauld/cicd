@@ -16,11 +16,12 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
-      - name: Set up Go and Goose
+      - name: Set up Go
         uses: actions/setup-go@v5
         with:
           go-version: "1.23.0"
 
+      - name: Setup Goose
         uses: mscno/setup-goose@v1
 
       - name: Build app
